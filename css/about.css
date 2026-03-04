@@ -53,6 +53,10 @@
   padding: 8em 2em 8em 2em;
 }
 
+.about-copy .about-copy-mobile {
+  display: none;
+}
+
 .about-copy .about-copy-content {
   text-align: center;
   width: 50%;
@@ -204,6 +208,14 @@
   .about-hero .about-hero-portrait img {
     position: absolute;
     height: 110%;
+  }
+
+  .about-copy .about-copy-desktop {
+    display: none;
+  }
+
+  .about-copy .about-copy-mobile {
+    display: flex;
   }
 
   .about-copy .about-copy-content {
