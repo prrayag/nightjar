@@ -55,14 +55,23 @@
 
 .hero-tagline {
   text-align: center;
-  margin-top: 1em;
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }
 
-.hero-tagline p {
-  font-size: 1.2rem;
-  opacity: 0.6;
-  font-style: italic;
-  letter-spacing: 0.02em;
+.hero-tagline .hero-tagline-main {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+}
+
+.hero-tagline .hero-tagline-sub {
+  font-size: clamp(0.85rem, 1.4vw, 1.1rem);
+  opacity: 0.5;
+  letter-spacing: 0.08em;
 }
 
 /* work intro */
