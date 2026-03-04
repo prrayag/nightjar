@@ -276,57 +276,84 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .connect-content {
-  max-width: 1000px;
-  margin: 0 auto;
   text-align: center;
-}
-
-.connect-header {
-  margin-bottom: 3em;
-}
-
-.connect-header h1 {
-  font-size: clamp(3rem, 7vw, 6rem);
-  margin-bottom: 0.5em;
-  line-height: 1;
-}
-
-.connect-header p {
-  font-size: 1.25rem;
-  line-height: 1.7;
-  opacity: 0.7;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.connect-details {
-  display: flex;
-  justify-content: center;
-  gap: 6em;
-}
-
-.connect-detail {
   display: flex;
   flex-direction: column;
-  gap: 0.4em;
+  align-items: center;
+  gap: 2em;
 }
 
-.connect-label {
-  opacity: 0.5;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 0.75rem;
-}
-
-.connect-detail a {
-  color: var(--fg);
+.hit-me-up-btn {
+  display: block;
   text-decoration: none;
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 0.1em;
+  color: var(--fg);
+  max-width: 700px;
+  width: 90vw;
+  transition: transform 0.3s ease;
+}
+
+.hit-me-up-btn:hover {
+  transform: scale(1.03);
+}
+
+.hit-me-up-inner {
+  position: relative;
+  padding: 3em 4em;
+  border-radius: 100px;
+  border: 0.25em solid var(--fg);
+  overflow: hidden;
+  background: repeating-linear-gradient(-45deg,
+      var(--bg),
+      var(--bg) 10px,
+      rgba(0, 0, 0, 0.04) 10px,
+      rgba(0, 0, 0, 0.04) 20px);
+}
+
+.hit-me-up-subtitle {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  opacity: 0.6;
+  margin-bottom: 0.5em;
+  font-style: italic;
+}
+
+.hit-me-up-inner h1 {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.connect-email {
+  font-size: 1rem;
+  opacity: 0.5;
+  letter-spacing: 0.05em;
+}
+
+/* footer - simplified */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  margin: 1.5em 0;
+}
+
+.footer-social a {
+  color: var(--bg);
+  text-decoration: none;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.footer-social a:hover {
+  opacity: 1;
+}
+
+.footer-dot {
+  color: var(--bg);
+  opacity: 0.3;
 }
 
 /* home - featured work */
