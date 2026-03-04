@@ -80,6 +80,16 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
+      // Anchor links — smooth scroll to section
+      if (href && href.startsWith("#") && href.length > 1) {
+        event.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+        return;
+      }
+
       if (isSamePage(href)) {
         console.log("Same page detected - preventing navigation");
         event.preventDefault();
