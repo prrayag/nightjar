@@ -107,7 +107,8 @@ footer .explosion-particle-img {
 
 @media (max-width: 1000px) {
   footer {
-    height: 100svh;
+    height: auto;
+    min-height: 60svh;
   }
 
   footer .copyright-info {
@@ -116,18 +117,10 @@ footer .explosion-particle-img {
     gap: 0.5em;
   }
 
-  footer .copyright-info p:nth-child(2) {
-    display: none;
-  }
-
   footer .footer-row {
     flex-direction: column;
     margin-bottom: 2em;
-  }
-
-  footer .footer-row .footer-col:nth-child(2),
-  footer .footer-row .footer-col:nth-child(4) {
-    display: none;
+    gap: 3em;
   }
 
   footer .explosion-container {
