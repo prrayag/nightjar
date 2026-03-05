@@ -166,7 +166,7 @@
 .video-card-inner {
   position: relative;
   width: 100%;
-  aspect-ratio: 9/16;
+  aspect-ratio: 4/5;
   border-radius: 1.2em;
   overflow: hidden;
   background: #111;
@@ -585,7 +585,15 @@
   }
 
   .video-grid-row {
-    flex-direction: column;
+    gap: 1em;
+  }
+
+  .video-grid {
+    gap: 1em;
+  }
+
+  .video-card-inner {
+    aspect-ratio: 3/4;
   }
 
   .work-intro-title h1 {
