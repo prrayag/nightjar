@@ -54,7 +54,11 @@
 }
 
 .about-copy .about-copy-mobile {
-  display: none;
+  display: none !important;
+}
+
+.about-copy .about-copy-content+.about-copy-content {
+  margin-top: 2em;
 }
 
 .about-copy .about-copy-content {
@@ -211,11 +215,11 @@
   }
 
   .about-copy .about-copy-desktop {
-    display: none;
+    display: none !important;
   }
 
   .about-copy .about-copy-mobile {
-    display: flex;
+    display: flex !important;
   }
 
   .about-copy .about-copy-content {
